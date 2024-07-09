@@ -5,7 +5,7 @@ from .models import *
 
 def index(request):
     tasks = Task.objects.all()
-    value = obj.get('field_name')
+    
     return render(request , 'main/index.html') , {'tasks':tasks}
 
 
