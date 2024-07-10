@@ -3,10 +3,11 @@ from django.urls import path
 from .models import *
 # Create your views here.
 
+
 def index(request):
-    tasks = Task.objects.all()
-    
-    return render(request , 'main/index.html') , {'tasks':tasks}
+    queryset = Task.objects.all()
+
+    return render(request , 'main/index.html') , {'tasks':queryset}
 
 
 def doktor(request):

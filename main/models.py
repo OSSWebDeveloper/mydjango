@@ -7,8 +7,7 @@ class Task(models.Model):
     task = models.TextField('Kengaytma')
 
 
-    def __str__(self):
-        return self.title
+    
 
     class Meta:
         verbose_name = 'Task'
